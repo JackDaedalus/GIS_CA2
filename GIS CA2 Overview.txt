@@ -1,0 +1,143 @@
+Assignment 2 - Census Data
+
+Hide Assignment Information
+Instructions
+Due 30th November 2022
+Census Data 2011-2016
+The Census gives a comprehensive picture of the social and living conditions of the population in 2016. It provides detail to the smallest area and the results are an essential tool for effective policy, planning and decision making purposes.
+
+The data is organised around a number of themes (see below) and broken down by a range of geographic areas as described below.
+
+Furthermore, by comparing data from Census 2016 with equivalent data from Census 2011, we can gain some insight into changes to the social and living conditions of the population.
+
+The question
+Background
+Anecdotally, one assumes that a third-level education is a good and useful thing. The correlation between educational achievement and employment prospects should, on the face of it, be obvious. The question is, however, whether the statistics bear out this hypothesis. Furthermore, it is reckoned that educational achievement, measured as holding a primary degree or higher qualification is inordinately concentrated in certain areas. Again, do the statistics bear this out? You should also examine whether there is a correlation between employment, socio-economic group and occupation.
+
+You should also analyse changing patterns of unemployment rates between 2011 and 2016. One would expect an improvement generally. Does the data bear this out? Are the benefits of the so-called economic recovery spread or are some areas falling further behind?
+
+The Problem
+The problem to be addressed is to take data from the Irish Census of Population 2011 and 2016 and analyse this data. The data is presented in various levels of geographic detail from large administrative areas to very small units of 50 homes or less. As well as the data strictly necessary to answer the question as given, the complete dataset for all 15 themes is provided.
+
+You should take appropriate data from files given and represent this geographically. You should use the results of your analysis to form a view as to whether the hypothesis is true. You should also be in a position to offer an informed opinion as to whether the data indicates inequities and, if so, how these might be solved.
+
+I leave it up to your judgement as to the level of geographic detail you wish to present. For example, some students will consider the issue at the national or regional level, some will consider a detailed study of a particular area – perhaps one known personally to them, some will compare different areas within large cities or urban/rural etc. The extent to which you use the thematic data will also vary. There is no right or wrong approach with this – I leave it up to your imagination.
+
+Submission
+The basic idea of this assignment is to take some data and (i) create some maps relevant to the stated problem, (ii) draw some conclusions based on what the mapped data reveals and (iii) report on your findings.
+
+Please submit one report in pdf format containing the maps you create, your findings, any other statistical data you consider relevant and a narrative commenting on your findings. Concentrate on the maps, be brief on the narrative.
+
+Hint: to include a map in a report (such as an MS Word) document you can export the map as a tif image and include this in a document.
+
+The final report should be AT MOST 5 pages and sent to me in pdf format via Brightspace. Please DO NOT send MS Word documents.
+
+The data
+Themes
+Sex, Age and Marital Status
+Migration, Ethnicity, Religion and Foreign Languages
+Irish Language
+Families
+Private Households
+Housing
+Communal Establishments
+Principal Status
+Social Class and Socio-Economic Group
+Education
+Commuting
+Disability, Carers and General Health
+Occupations
+Industries
+Motor Car Availability, PC Ownership and Internet Access
+Geography	Records (2011)	2016 dataset1	2011 Shapefile	2011 Data File
+State	1	 	Not applicable	AllThemesTablesS.csv
+Provinces	4	 	Census2011_Province_Modified	AllThemesTablesPR.csv
+Regional Authority Areas	8	 	Census2011_NUTS3_Modified	AllThemesTablesRA.csv
+Counties	34	cso16:cty16geomdata	Census2011_Counties_Modified	AllThemesTablesCTY.csv
+Electoral Divisions	3,409	cso16:ed16geomdata	Census2011_Electoral_Divisions_Modified	AllThemesTablesED.csv
+Small Areas	18,488	cso16:sa16geomdata	Census2011_Small_Areas_Modified	AllThemesTablesSA.csv
+Dáil Constituencies	43	cso16:dc16geomdata	Census2011_Constituencies_2007_Modified	AllThemesTablesDC.csv
+Gaeltacht Areas	7	cso16:ga16geomdata	Census2011_Gaeltacht_Modified	AllThemesTablesGA.csv
+Local Electoral Areas	171	 	Census2011_Local_Electoral_Areas_2008_Modified	AllThemesTablesLEA.csv
+Legal Towns and Cities	85	 	Census2011_Cities_Towns_Modified	AllThemesTablesLT.csv
+Towns/Cities (Settlements)	824	 	Census2011_Settlements_Modified	AllThemesTablesST.csv
+Table: 1 – Files and datasets
+
+The 2011 shapefiles contain boundary data (polygons) and some other data as listed in Table 1. The 2011 data files contain values relating to the themes as described in above. The detail of each header in the data files is described in Theme_breakdown.xls. I have modified the shapefiles slightly to include an extra field (GEOGID) which is used to join a shapefile with its associated data file as listed in Table 1.
+
+The 2016 Datasets contain boundary and attribute data. The detail of each header is described in SAPS_2016_Glossary-3.xls. These should be essentially the same as the 2011 headers. Any new headers are highlighted in the file. 
+
+The layer projection for both years should be Irish Grid (TM65). The EPSG code for this is 29902.
+
+The following variables have also been included as attributes in the 2011 shapefiles:
+
+Variable name	Description
+Male2011, Female2011. Total2011	The de facto count of males, females and total population respectively
+PPOcc2011	Permanent private housing units
+Unocc2011	The total unoccupied dwellings on Census (total vacant dwellings + temporarily absent dwellings)
+Vacant2011	Total vacant dwellings (vacant houses + vacant flats + holiday homes)
+HS2011	Total housing stock (PPOcc2011+Unocc2011)
+PCVac2011	Vacancy rate (Vacant2011/HS2011)
+Table: 2 – Additional attributes in shapefiles
+
+The geography of the data
+Provinces
+Ireland is divided into four provinces: Leinster, Ulster, Munster and Connacht. Although at present they do not have any administrative functions, they are relevant for a number of historical, cultural and sporting reasons. The borders of the provinces coincide exactly with the boundaries of the administrative counties. Three of the nine counties in Ulster are within the jurisdiction of the State.
+
+NUTS boundaries
+The Nomenclature of Territorial Units for Statistics (NUTS) were drawn up by Eurostat in order to define territorial units for the production of regional statistics across the European Union. The NUTS classification has been used in EU legislation since 1988, but it was only in 2003 that the EU Member States, the European Parliament and the Commission established the NUTS regions within a legal framework.
+
+The Irish NUTS 3 regions comprise the eight Regional Authorities established under the Local Government Act, 1991 (Regional Authorities) (Establishment) Order, 1993 which came into operation on January 1st 1994. The NUTS 2 regions, which were proposed by Government and agreed to by Eurostat in 1999, are groupings of the Regional Authorities.
+
+Administrative counties
+In census reports the country is divided into 29 counties/administrative counties and the five Cities which represent the local authority areas. Outside Dublin there are 26 administrative counties (North Tipperary and South Tipperary each ranks as a separate county for administrative purposes) and four Cities, i.e. Cork, Limerick, Waterford and Galway. In Dublin the four local authority areas are identified separately, i.e. Dublin City and the three administrative counties of Dún Laoghaire-Rathdown, Fingal and South Dublin.
+
+Electoral Divisions
+There are 3,440 Electoral Divisions (EDs) which are the smallest legally defined administrative areas in the State. One ED, St. Mary's, straddles the Louth-Meath county border, and is presented in two parts in the SAPS 2 tables, with one part in Louth and the other in Meath. There are 32 EDs with low population, which for reasons of confidentiality have been amalgamated into neighbouring EDs giving a total of 3,409 EDs which appear in the SAPS tables.
+
+Small Areas
+Small Areas are areas of population comprising between 50 and 200 dwellings created by The National Institute of Regional and Spatial Analysis(NIRSA) on behalf of the Ordnance Survey Ireland(OSi) in consultation with CSO. Small Areas were designed as the lowest level of geography for the compilation of statistics in line with data protection and generally comprise either complete or part of townlands or neighbourhoods. There is a constraint on Small Areas that they must nest within Electoral Division boundaries.
+
+Small areas were used as the basis for the Enumeration in Census 2011. Enumerators were assigned a number of adjacent Small Areas constituting around 400 dwelling in which they had to visit every dwelling and deliver and collect a completed census form and record the dwelling status of unoccupied dwellings.
+
+The small area boundaries have been amended in line with population data from Census 2011
+
+2007 Constituency boundaries
+For the purpose of elections to Dáil Éireann the country is divided into Constituencies which, under Article 16.4 of the Constitution of Ireland, have to be revised at least once every twelve years with due regard to changes in the distribution of the population. The Constituencies were revised in 2007.
+
+Note that the latest dataset refers to constituency boundaries revised in 2013.
+
+Gaeltacht Areas
+The Gaeltacht Areas Orders, 1956, 1967, 1974 and 1982 defined the Gaeltacht as comprising 155 Electoral Divisions or parts of Electoral Divisions in the counties of Cork, Donegal, Galway, Kerry, Mayo, Meath and Waterford.
+
+2008 Local Electoral Areas
+For the purposes of County Council and Corporation elections each county and city is divided into Local Electoral Areas (LEAs) which are constituted on the basis of Orders made under the Local Government Act, 1941. In general, LEAs are formed by aggregating Electoral Divisions. However, in a number of cases Electoral Divisions are divided between LEAs to facilitate electors.
+
+Legal Towns and Cities
+Urban areas with legally defined boundaries consist of the five Cities (Cork, Dublin, Galway, Limerick and Waterford), five Boroughs (Clonmel, Drogheda, Kilkenny, Sligo and Wexford) and 75 Towns as established under the Local Government Act, 2001 (S.I. 591 of 2001). Extensions to the boundaries can also occur, subject to legislation passed under the instruction of the Department of Environment, Community and Local Government.
+
+Settlements (Census towns, legal towns and environs, cities and suburbs)
+In order to distinguish between the urban and rural population for census analysis, the boundaries of distinct settlements need to be defined. This requires the creation of suburbs and extensions to existing cities and legal towns as well as delineating boundaries for settlements which are not legally defined (called Census towns).
+
+From 1971 to 2006, Census towns were defined as a cluster of fifty or more occupied dwellings where, within a radius of 800 metres there was a nucleus of thirty occupied dwellings (on both sides of a road, or twenty on one side of a road), along with a clearly defined urban centre e.g. a shop, a school, a place of worship or a community centre. Census town boundaries where extended over time where there was an occupied dwelling within 200 metres of the existing boundary.
+
+To avoid the agglomeration of adjacent towns caused by the inclusion of low density one off dwellings on the approach routes to towns, the 2011 criteria were tightened, in line with UN criteria.
+
+In Census 2011 a new Census town was defined as being a cluster with a minimum of 50 occupied dwellings, with a maximum distance between any dwelling and the building closest to it of 100 metres, and where there was evidence of an urban centre (shop, school etc). The proximity criteria for extending existing 2006 Census town boundaries was also amended to include all occupied dwellings within 100 metres of an existing building. Other information based on OSi mapping and orthogonal photography was taken into account when extending boundaries. Boundary extensions were generally made to include the land parcel on which a dwelling was built or using other physical features such as roads, paths etc.
+
+Extensions to the environs and suburbs of legal towns and cities were also constructed using the 100 metre proximity rule applied to Census towns.
+
+For census reports, urban settlements are towns with a population of 1,500 or more, while settlements with a population of less than 1,500 are classified as rural.
+
+I will make more data available for the other geographic regions as the semester progresses. ↩
+
+SAPS – Small Area Population Statistics ↩
+
+Assignment data
+Census 2016 data also on https://tudublin-my.sharepoint.com/:f:/g/personal/mark_foley_tudublin_ie/EgqX9l4wp7pJqg45iwoJsdUB1I5YKAsd8RkpebSkICWGOQ?e=jnQIZK
+Census 2011 data also on https://tudublin-my.sharepoint.com/:f:/g/personal/mark_foley_tudublin_ie/EmvEwgqIN11GnfXbh1DhyfMB9TnQ6jvXs_5Z6plO8c1WQQ?e=2afgYW
+
+Start Date
+10 November 2022 12:01 AM
+Due Date
+30 November 2022 11:59 PM
