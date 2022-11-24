@@ -1,0 +1,15 @@
+Theme 1: Sex, age and marital status
+Theme 2: Migration, ethnicity and religion
+Theme 3: Irish language
+Theme 4: Families
+Theme 5: Private households 	
+Theme 6: Housing
+Theme 7: Communal establishments 	
+Theme 8: Principal status
+Theme 9: Social class and socio-economic group
+Theme 10: Education
+Theme 11: Commuting
+Theme 12: Disability, carers and general health
+Theme 13: Occupation
+Theme 14: Industries
+Theme 15: PC and internet Access
