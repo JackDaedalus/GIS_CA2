@@ -1,0 +1,22 @@
+HOW TO EXTRACT FILES FROM ZIP:
+you’ll need a program like WinRAR/WinZIP to extract those files. 
+To extract files from a compressed format, right click on the file and select Extract files... or Extract Here. 
+Extract files... lets you choose where the extracted files will be saved. 
+Extract Here puts the files in the same directory as the compressed file. 
+
+
+WEBSITE TO DOWNLOAD LAYERS:
+Population spreadsheet - .csv format
+https://worldpopulationreview.com/us-counties/states/ca
+
+California county boundaries - .shp format
+https://gis.data.ca.gov/datasets/CALFIRE-Forestry::california-county-boundaries/explore?location=37.090729%2C-119.002032%2C6.77&showTable=true
+
+Ocean - .shp format
+https://www.naturalearthdata.com/downloads/10m-physical-vectors/
+
+Countries and states/provinces - .shp format
+https://www.naturalearthdata.com/downloads/10m-cultural-vectors/
+
+Natural Earth II with Shaded Relief and Water - .tif format
+https://www.naturalearthdata.com/downloads/10m-raster-data/10m-natural-earth-2/
